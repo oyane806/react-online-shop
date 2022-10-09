@@ -14,9 +14,9 @@ const CartDropdown = () => {
   return (
     <div className="cart-dropdown-container">
       {cartItems.map((cartItem) => {
-        return <CartItem key={cartItem.key} cartItem={cartItem} />;
+        return <CartItem key={cartItem.id} cartItem={cartItem} />;
       })}
-      <Button onClick={goToCheckoutHandler}>Go to checkout</Button>
+      <Button onClick={goToCheckoutHandler}>Checkout</Button>
     </div>
   );
 };
